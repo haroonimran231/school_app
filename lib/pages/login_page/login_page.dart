@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:school_app/constraints.dart';
+import 'package:school_app/pages/info_page.dart';
 
 late bool _passwordVissible;
 
@@ -282,7 +283,35 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ],
-                        )
+                        ),
+                        SizedBox(
+                          width: double.maxFinite,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              fixedSize: Size(355.0, 55.0),
+                              backgroundColor: const Color(0xff8B010B),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12.0),
+                                side:
+                                    const BorderSide(color: Colors.transparent),
+                              ),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (context) => InfoPage()),
+                              );
+                            },
+                            child: Text(
+                              'Personal Information',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16.0,
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
