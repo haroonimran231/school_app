@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:school_app/constraints.dart';
 import 'package:school_app/pages/login_page/login_page.dart';
-import 'package:school_app/pages/login_page/todo_page.dart';
+// import 'package:school_app/pages/login_page/todo_page.dart';
 
 class SplashPage extends StatelessWidget {
   static var routeName;
@@ -13,9 +13,12 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 5), () {
-      Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => ToDoPage()));
+    Future.delayed(Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => LoginPage(),
+        ),
+      );
     });
     return Scaffold(
       body: Center(

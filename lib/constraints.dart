@@ -12,6 +12,21 @@ const Color KErrorBorderColor = Color(0xFFE74C3C);
 // ignore: constant_identifier_names
 const KDefaultPadding = 28.0;
 
+const khalfsizedBox = SizedBox(
+  height: KDefaultPadding / 2,
+);
+
+const khalfWidthsizedBox = SizedBox(
+  width: KDefaultPadding / 2,
+);
+
+const sizedBox = SizedBox(
+  height: KDefaultPadding,
+);
+const kwidthSizedBox = SizedBox(
+  width: KDefaultPadding,
+);
+
 const String mobilePattern = r'(^(?:[+0]9)?[8-9]{10,12}$)';
 
 // const String emailPattern = String.fromEnvironment(
