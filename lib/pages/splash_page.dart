@@ -13,7 +13,7 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (_) => LoginPage(),
